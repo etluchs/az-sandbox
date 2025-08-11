@@ -53,7 +53,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_app_build: true
-          app_location: ${{ env.OUTPUT_LOCATION }}
+          app_location: webdoc/build
           output_location: ''
 
   close_pull_request:
