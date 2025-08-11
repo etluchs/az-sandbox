@@ -9,7 +9,7 @@
 
 name: Deploy web app to Azure Static Web Apps
 
-env:
+# env:
 #  APP_LOCATION: "/" # location of your client code
 #  OUTPUT_LOCATION: "webdoc/build" # location of client code build output
 
