@@ -2,6 +2,8 @@ name: Deploying to Azure
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - 'webdoc/**'
       - '.github/**'
