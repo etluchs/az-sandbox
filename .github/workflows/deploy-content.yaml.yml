@@ -11,7 +11,6 @@ name: Deploy web app to Azure Static Web Apps
 
 env:
   APP_LOCATION: "/" # location of your client code
-  API_LOCATION: "api" # location of your api source code - optional
   OUTPUT_LOCATION: "webdoc/build" # location of client code build output
 
 on:
@@ -55,7 +54,6 @@ jobs:
           action: "upload"
           skip_app_build: true
           app_location: ${{ env.OUTPUT_LOCATION }}
-          api_location: ${{ env.API_LOCATION }}
           output_location: ''
 
   close_pull_request:
