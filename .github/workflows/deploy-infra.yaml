@@ -22,7 +22,7 @@ jobs:
         with:
           client-id: 7469d0a7-98e5-41d0-a94c-6573132c9ebc
           tenant-id: 1649d29f-a2ee-4c16-a073-47b4ba4c9b9b
-          subscription-id: 972738a4-0ab2-43c2-9e07-3f0bf496b2c1
+          subscription-id: /subscriptions/972738a4-0ab2-43c2-9e07-3f0bf496b2c1
 
       - name: '🚀 Deploy static web server'
         uses: azure/cli@v2
