@@ -46,8 +46,6 @@ jobs:
         run: |
           mkdir -p build
           cp src/index.html build/index.html
-#          cp src/index.html .
-#          cp src/index.html ..
           pwd
           ls -l build src
       - name: Deploy
