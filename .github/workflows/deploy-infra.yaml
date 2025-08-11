@@ -1,0 +1,35 @@
+name: Deploying to Azure
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'webdoc/**'
+      - '.github/**'
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: '⬇️ Checkout code'
+        uses: actions/checkout@v4
+
+      - name: '🧑‍🦱 Azure login'
+        uses: azure/login@v2
+        with:
+          client-id: 7469d0a7-98e5-41d0-a94c-6573132c9ebc
+          tenant-id: 1649d29f-a2ee-4c16-a073-47b4ba4c9b9b
+          subscription-id: 972738a4-0ab2-43c2-9e07-3f0bf496b2c1
+
+      - name: '🚀 Deploy static web server'
+        uses: azure/cli@v2
+        with:
+            azcliversion: latest
+            inlineScript: |
+              az deployment sub create \
+                --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
+                --location westeurope \
+                --template-file webdoc/static.bicep
