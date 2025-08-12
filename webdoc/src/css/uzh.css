@@ -1,0 +1,32 @@
+.reveal {
+    font-family: sans-serif;
+}
+
+body div.reveal, slide {
+    background-image: url("https://www.uzh.ch/docroot/logos/uzh_logo_d_pos.svg");
+    background-repeat: no-repeat;
+    background-position: top 8px left 8px;
+    background-size: 20%;
+}
+
+.reveal section h1, .reveal section h2 {
+    font-weight: normal;
+    color: #0028a5;
+}
+
+section.r-fit-text {left: 0px}
+
+.compact {
+    font-size: 1vh;
+}
+
+.compact p.tableblock {
+    margin: 0.5vh;
+}
+
+div.pdf-page div.slide-background {
+    background-image: url("https://www.uzh.ch/docroot/logos/uzh_logo_d_pos.svg");
+    background-repeat: no-repeat;
+    background-position: top 8px left 8px;
+    background-size: 20%;
+}

@@ -1,0 +1,135 @@
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.1.2
+:revealjs_theme: white
+:revealjs_margin: 0.1
+//:revealjs_customtheme: uzh.css
+:docinfo: shared
+
+= Continual Service Improvement
+Nicole Hartmann <nicole.hartmann@uzh.ch>
+:title-slide-background-color: white
+:title-slide-background-image: https://www.uzh.ch/docroot/logos/uzh_logo_d_pos.svg
+:title-slide-background-position: top 8px left 8px
+:title-slide-background-size: 20%
+
+== zur Erinnerung...
+
+[.r-fit-text, .r-stretch]
+=== Ausgangslage & Ziele
+
+[.text-left]
+*Ausgangslage*
+
+* Massnahme aus Evaluationsbericht:
+Aufbau CSI-Prozess und Neubewertung wesentlicher Services hinsichtlich deren Reifegrades
+
+[.text-left]
+*Ziele*
+
+* Erhöhung der Servicequalität
+* Verbesserung der Nutzerzufriedenheit
+* Allenfalls Einsparen von Ressourcen durch verbesserte und schlankere Prozesse
+
+[.r-fit-text, .r-stretch]
+=== Vorgehen
+
+[.text-left]
+*Erarbeiten CSI-Prozesse*
+
+* Erstellen Prozess-Steckbriefe
+* Festlegen Prozess Owner, Prozess Manager
+* Erarbeiten der Prozesse inkl. allfälliger Unterstützungsdokumentation
+
+[.text-left]
+*Untersuchen der wesentlichen Services*
+
+* Erheben der wesentlichen Services anhand der CSI-Prozesse
+* Untersuchen der evaluierten Services anhand der CSI-Prozesse
+* Definition Verbesserungsmaßnahmen
+
+[.r-fit-text, .r-stretch]
+=== Terminplan
+
+[cols="1,1"]
+|===
+|Initialversion CSI-Prozess FüSi vorlegen
+|13.12.2023
+|Einarbeiten der Änderungen aus FüSi
+|15.01.2023
+|CSI-Prozesse durch FüSi abgenommen
+|31.01.2024
+|Start Durchführung CSI-Prozesse (ohne Überwachung) für wesentliche Services
+|01.02.2024
+|===
+
+== Der Stand der Dinge
+
+=== Prozess-Steckbriefe ✓
+
+link:https://uzh-it.atlassian.net/l/cp/Su0oT0hf[]
+
+=== Prozesse ✓
+
+[.text-left]
+* link:https://uzh.processdesign.bicplatform.ch/client/#/view/tenant/80637bca-ee13-49bb-b210-f464666c50e2/repository/1f5424b2-f090-4cc7-b255-b5e47f669797/stage/common/diagrams/9e71785b-6721-4f8b-a71f-ca96ded73d60?forceReload=false[Serviceportfolio aktualisieren]
+
+* link:https://uzh.processdesign.bicplatform.ch/client/#/view/tenant/80637bca-ee13-49bb-b210-f464666c50e2/repository/1f5424b2-f090-4cc7-b255-b5e47f669797/stage/common/diagrams/ff5c65dc-9cb7-48bc-bae5-48a5074fb3c7?forceReload=false[Service verbessern]
+
+[.r-fit-text]
+=== Weiteres Vorgehen
+* rollierender Start mit Business-Services
+** der Service Klasse A
+** die momentan in Betrieb sind
+*** Services sind wesentlich für den Betrieb der Universität
+*** Menge ist handlebar - 18 Services
+* Schulung der entsprechenden Service Owner
+* Start mit 3 Services im Februar
+* laufende Verbesserung Prozesse & Checkliste
+* bis Ende '24: Business-Services mit Service Klasse A sind geprüft
+
+=== Input von FüSI
+* Entscheid bis 15.01. mit welchen A-Services gestartet werden soll
+
+[.r-fit-text]
+=== Business-Services, Serviceklasse A
+
+[.compact]
+[%autowidth]
+[cols="1,1"]
+|===
+|Active Directory / Active Directory Federation Services
+|Michael Fahrni Gloor, Thomas Schurter
+|Connectivity Wired
+|Benjamin Pivac
+|Connectivity Wireless
+|Benjamin Pivac
+|Datenbankservice MariaDB
+|Daniel Förderer
+|E-Mail und Kalender
+|Michael Fahrni Gloor, Thomas Schurter
+|Lernplattform OLAT
+|Daniela Fischer, Roland Villars
+|Lokaler Speicher UZH – Blockstorage SAN
+|Marco Höhle
+|Lokaler Speicher UZH - File Service
+|Michael Fahrni Gloor, Thomas Schurter
+|Netzdienste
+|Benjamin Pivac
+|Proxy
+|Roman Meng
+|SAP Student Lifecycle Management (SAP SLcM) – studentische Webapplikationen
+|Michael Brunner
+|Veranstaltungsübertragungen (Hörsaal)
+|Martin Anklin
+|Verzeichnisdienst LDAP
+|Roman Meng
+|Virtuelles Server Hosting
+|Michael Fahrni Gloor, Thomas Schurter, Andreas Windschüttl
+|VPN Remote Access
+|Benjamin Pivac
+|Web Content Management
+|Thomas Comiotto
+|Webhosting und PHP-Applikationsserver
+|Jann Forrer,  Lars Frasseck
+|ZORA Publikationsrepository
+|Martin Brändle
+|===

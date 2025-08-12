@@ -47,6 +47,7 @@ jobs:
           mkdir -p build
           cp src/index.html build/index.html
           pwd
+          ./render-presentations.sh
           ls -l build src
       - name: Deploy
         uses: Azure/static-web-apps-deploy@v1
