@@ -1,0 +1,19 @@
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.1.2
+:revealjs_theme: white
+:revealjs_margin: 0.1
+//:revealjs_customtheme: uzh.css
+:docinfo: shared
+
+= IT Architektur
+Marcus Schulte <marcus.schulte@uzh.ch>
+:title-slide-background-color: white
+:title-slide-background-image: https://www.uzh.ch/docroot/logos/uzh_logo_d_pos.svg
+:title-slide-background-position: top 8px left 8px
+:title-slide-background-size: 20%
+
+== Was is SW Architektur?
+
+=== Who needs an architect?
+
+== Anforderung und Implementation
+
