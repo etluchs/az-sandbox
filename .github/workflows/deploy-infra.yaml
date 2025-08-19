@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'webdoc/static.bicep'
-      - '.github/**'
+      - '.github/workflows/deploy-infra.yaml'
 
 permissions:
   id-token: write
