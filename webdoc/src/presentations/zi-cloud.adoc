@@ -1,0 +1,48 @@
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.1.2
+:revealjs_theme: white
+:revealjs_margin: 0.1
+//:revealjs_customtheme: uzh.css
+:docinfo: shared
+
+= State of UZH cloud infrastructure
+Marcus Schulte <marcus.schulte@uzh.ch>
+
+== Ziele
+Infrastruktur schnell, self-service, bei schwankender Kapazität (Automatisierung und Skalierung)
+
+== Was wir wollen
+
+== Was wir haben
+
+=== Landing Zone
+==== Automatisierung / self-service
+
+Erste Schritte zum Subscription Vending (mit Applikations-Template im Rohbau)
+
+==== Zentrales Monitoring
+
+==== Security/Governance
+- WAF / Policies
+
+=== skalierbarer JupyterHub
+==== JupyterLab Ergonomie
+Hardware-Nutzung: Toggle via Lab-UI:
+
+[source,shell]
+----
+ kubectl -n jupyterhub get pod jupyter-ernie -o go-template="{{.spec.nodeSelector}}" -w
+----
+
+== besser als erwartet
+=== Github Workflows
+
+=== OpenTofu
+
+(nicht so schlimm, wie befürchtet)
+Datenstrukturbeschreibungsprache vs Programmiersprache. Eher auf der Seite des ersteren, das muss aber nicht (nur) schlecht sein.
+
+=== Kubernetes
+Hat das Zeug zur "JVM der Cloud": Verlässliche API, Implementierung auf "vielen Skalen" (kind, Minikube, OKD, A/EKS, GKE)
+
+== weniger gut
+Latenz, Cloud-Sekunde :-)
