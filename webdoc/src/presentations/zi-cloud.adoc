@@ -1,0 +1,99 @@
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.1.2
+:revealjs_theme: white
+:revealjs_margin: 0.1
+//:revealjs_customtheme: uzh.css
+:docinfo: shared
+:icons: font
+:data-uri:
+
+= State of UZH cloud infrastructure
+Marcus Schulte <marcus.schulte@uzh.ch>
+
+== Ziele
+Infrastruktur
+
+[%step]
+  - schnell,
+  - im self-service,
+  - robust unter variierender Last
+
+[%step]
+TIP: Automatisierung und Skalierung
+
+== Was wir wollen
+
+=== 1. Kontext
+
+image::Screenshot 2025-12-07 at 17.30.59.png[]
+
+=== Landing Zone
+
+  - Security & Governance f. Workload
+    ** networking
+    ** policies
+  - Subscription vending und Management
+    ** Anlegen
+    ** Verrechnen
+
+=== JupyterHub
+
+ * Integriert mit OLAT
+ * günstig
+ * skalierbar
+ * CPU und GPU
+
+== Was wir haben
+  - Entwicklunsstand
+  - Demo
+
+== Landing Zone
+
+=== Governance
+ - Management Groups und Policies ...
+ - https://portal.azure.com/#view/HubsExtension/ServiceMenuBlade/~/managementgroupbrowse/extension/Microsoft_Azure_Resources/menuId/ResourceManager/itemId/managementgroupbrowse[-> Management groups]
+ - https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade.MenuView/~/Compliance[-> policies]
+
+
+=== Hub & Spoke: Connectivity
+image::Screenshot 2025-12-07 at 15.33.23.png[width=400, height=400]
+
+=== Management Übersicht
+
+image::Screenshot 2025-12-07 at 15.48.28.png[height=400,  width=400]
+
+=== Management Logs  und Monitoring
+
+  * Grundlagen sind da
+  * Sonst noch in frühem Stadium
+  * https://grafana-prod-18rt5-fycnfwcwbxcmbtf9.neu.grafana.azure.com/d/bf67lcbp2xrlsa/test-log-board?orgId=1&from=now-3h&to=now&timezone=browser[Ein dashboard]
+
+==== Automatisierung / self-service
+
+Erste Schritte zum Subscription Vending (mit Applikations-Template im Rohbau):
+https://uzh-zi.ghe.com/ZI-Cloud-Projekt/azure-container-apps-template[Das Template für Container-Applications]
+
+== JupyterHub
+
+image::Screenshot 2025-12-07 at 16.56.37.png[]
+
+=== JupyterLab Ergonomie
+
+ * Demo Nutzung
+ * Demo Entwicklung
+  ** Hardware-Nutzung: Toggle via Lab-UI
+
+
+
+== Was bisher gut aussah
+=== Github Workflows
+  - robuste, konfigurierbare runner
+  - off-the shelf actions brauchbar
+  - Trust mit Azure (no secrets)
+
+=== OpenTofu
+
+(nicht so schlimm, wie befürchtet)
+Datenstrukturbeschreibungsprache vs Programmiersprache. Eher auf der Seite des ersteren, das muss aber nicht (nur) schlecht sein.
+
+=== Kubernetes
+Hat das Zeug zur "JVM der Cloud": Verlässliche API, Implementierung auf "vielen Skalen" (kind, Minikube, OKD, A/EKS, GKE)
