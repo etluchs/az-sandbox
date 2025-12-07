@@ -3,6 +3,7 @@
 :revealjs_margin: 0.1
 //:revealjs_customtheme: uzh.css
 :docinfo: shared
+:data-uri:
 
 = IT Architektur
 Marcus Schulte <marcus.schulte@uzh.ch>

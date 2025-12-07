@@ -4,7 +4,7 @@
 //:revealjs_customtheme: uzh.css
 :docinfo: shared
 :icons: font
-
+:data-uri:
 
 = State of UZH cloud infrastructure
 Marcus Schulte <marcus.schulte@uzh.ch>
